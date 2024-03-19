@@ -1,0 +1,251 @@
+.cart-product {
+  box-sizing: border-box;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  width: 633px;
+  min-height: 218px;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 18px 28px 18px 17px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+
+  &__name,
+  &__price,
+  &__counter,
+  &__total-price {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__remove {
+    justify-self: end;
+    align-self: start;
+    width: 19px;
+    height: 17px;
+    object-fit: contain;
+  }
+
+  &__infoblock {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 150px;
+    max-height: 140px;
+    object-fit: contain;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__name,
+  &__price {
+    max-width: 150px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #aaa;
+  }
+
+  &__countblock {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 30px;
+  }
+
+  &__button {
+    background: #ffce7f no-repeat center;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    padding: 0;
+    width: 35px;
+    height: 30px;
+
+    &-increase {
+      background-image: url('../../images/increaseIcon.svg');
+    }
+
+    &-decrease {
+      background-image: url('../../images/decreaseIcon.svg');
+    }
+  }
+
+  &__counter {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  &__total-price {
+    max-width: 100%;
+    justify-self: end;
+    align-self: end;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  @media (min-width: 640px) {
+    &__countblock {
+      gap: 23px;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 1160px) {
+    & {
+      min-height: 195px;
+      width: 50vw;
+      min-width: 350px;
+      padding: 17px 14px;
+      border-radius: 20px;
+    }
+
+    &__infoblock {
+      gap: 19px;
+    }
+
+    &__info {
+      gap: 6px;
+    }
+
+    &__button {
+      width: 30px;
+      height: 26px;
+    }
+
+    &__image {
+      max-width: 130px;
+      max-height: 125px;
+    }
+
+    &__name,
+    &__price,
+    &__total-price {
+      font-size: 14px;
+      line-height: auto;
+    }
+
+    &__name,
+    &__price {
+      max-width: 120px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 639px) {
+    & {
+      min-height: 180px;
+      width: 100%;
+      max-width: 400px;
+      padding: 12px;
+      border-radius: 15px;
+    }
+
+    &__infoblock {
+      gap: 14px;
+    }
+
+    &__info {
+      gap: 6px;
+    }
+
+    &__button {
+      width: 30px;
+      height: 26px;
+    }
+
+    &__image {
+      max-width: 100px;
+      max-height: 95px;
+    }
+
+    &__name,
+    &__price,
+    &__total-price {
+      font-size: 12px;
+      line-height: auto;
+    }
+
+    &__name,
+    &__price {
+      max-width: 100px;
+    }
+  }
+
+  @media (max-width: 319px) {
+    & {
+      width: 100%;
+      padding: 3vw;
+      border-radius: 6vw;
+      min-height: 50vw;
+    }
+
+    &__remove {
+      width: 6vw;
+      height: 6vw;
+      object-fit: contain;
+    }
+
+    &__infoblock {
+      gap: 5vw;
+    }
+
+    &__image {
+      max-width: 15vw;
+      max-height: 14vw;
+    }
+
+    &__info {
+      gap: 4vw;
+    }
+
+    &__name,
+    &__price {
+      max-width: 25vw;
+      font-size: 4vw;
+      line-height: 5vw;
+    }
+
+    &__countblock {
+      gap: 3vw;
+      min-height: 6vw;
+    }
+
+    &__button {
+      width: 6vw;
+      height: 6vw;
+      background-size: 50%;
+
+      &-increase {
+        background-image: url('../../images/increaseIcon.svg');
+      }
+
+      &-decrease {
+        background-image: url('../../images/decreaseIcon.svg');
+      }
+    }
+
+    &__counter,
+    &__total-price {
+      font-size: 5vw;
+      line-height: 6vw;
+    }
+  }
+}

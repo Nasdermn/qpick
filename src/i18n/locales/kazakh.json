@@ -1,0 +1,17 @@
+{
+  "headphones": "Құлаққаптар",
+  "wirelessHeadphones": "Сымсыз құлаққаптар",
+  "favourites": "Таңдаулылар",
+  "cart": "Себет",
+  "contacts": "Байланыстар",
+  "termsOfService": "Қызмет шарттары",
+  "buy": "Сатып алу",
+  "total": "ЖАЛПЫ",
+  "proceedToCheckout": "Тапсырысты толтыруға өтіңіз",
+  "notFound": "Бет табылмады",
+  "goBack": "Артқа оралу",
+  "emptyCart": "Сіздің себетіңіз қазір бос.",
+  "itemAdded": "Тауар сәтті қорапқа қосылды.",
+  "continueShopping": "Саудаларды жалғастыру",
+  "goToCart": "Қорапқа өту"
+}

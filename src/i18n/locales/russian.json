@@ -1,0 +1,17 @@
+{
+  "headphones": "Наушники",
+  "wirelessHeadphones": "Беспроводные наушники",
+  "favourites": "Избранное",
+  "cart": "Корзина",
+  "contacts": "Контакты",
+  "termsOfService": "Условия сервиса",
+  "buy": "Купить",
+  "total": "ИТОГО",
+  "proceedToCheckout": "Перейти к оформлению",
+  "notFound": "Страница не найдена",
+  "goBack": "Вернуться назад",
+  "emptyCart": "Ваша корзина пока пуста.",
+  "itemAdded": "Товар успешно добавлен в корзину.",
+  "continueShopping": "Продолжить покупки",
+  "goToCart": "Перейти в корзину"
+}

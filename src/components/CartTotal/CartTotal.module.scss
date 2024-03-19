@@ -1,0 +1,108 @@
+.cart-total {
+  box-sizing: border-box;
+  min-width: 348px;
+  height: 114px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow-y: visible;
+  position: relative;
+
+  &__text,
+  &__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin: 21px 21px 0 16px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    bottom: -5px;
+    position: absolute;
+    width: 100%;
+    background-color: #101010;
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 640px) and (max-width: 1160px) {
+    & {
+      min-width: 240px;
+    }
+
+    &__text,
+    &__link {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  @media (min-width: 320px) {
+    &__link {
+      min-height: 65px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 639px) {
+    & {
+      min-width: initial;
+      width: 85%;
+      max-width: 300px;
+    }
+
+    &__text,
+    &__link {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  @media (max-width: 319px) {
+    & {
+      min-width: 85%;
+      height: 37vw;
+      border-radius: 10vw;
+    }
+
+    &__text,
+    &__link {
+      font-size: 4vw;
+      line-height: 5vw;
+    }
+
+    &__info {
+      margin: 6vw 7vw 0;
+    }
+
+    &__link {
+      bottom: -4vw;
+      height: 21vw;
+      border-radius: 8vw;
+    }
+  }
+}

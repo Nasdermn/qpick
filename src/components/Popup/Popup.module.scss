@@ -1,0 +1,145 @@
+.popup {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s ease;
+  z-index: 2;
+
+  &_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__container {
+    position: relative;
+    box-sizing: border-box;
+    width: 450px;
+    min-height: 250px;
+    background-color: #eaeaea;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__cross {
+    position: absolute;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    background: transparent url(../../images/crossIcon.svg) no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    top: -20px;
+    right: -20px;
+  }
+
+  &__title,
+  &__button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__title {
+    font-weight: 600;
+    margin: 25px 0;
+    text-align: center;
+  }
+
+  &__buttons {
+    margin: 10px 0 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 55px;
+    background-color: #111010;
+    color: #eaeaea;
+    outline: 0;
+    text-decoration: none;
+    padding: 0;
+    font-weight: 400;
+    border: 2px solid #1483ab;
+    border-radius: 15px;
+  }
+
+  @media (min-width: 400px) and (max-width: 639px) {
+    &__container {
+      width: 275px;
+      min-height: 185px;
+    }
+
+    &__buttons {
+      gap: 15px;
+      margin: 5px 0 15px;
+    }
+
+    &__title,
+    &__button {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__title {
+      margin: 20px 0;
+    }
+
+    &__button {
+      min-height: 45px;
+    }
+  }
+
+  @media (max-width: 399px) {
+    &__container {
+      width: 70vw;
+      min-height: 45vw;
+      border-radius: 5vw;
+    }
+
+    &__cross {
+      width: 5vw;
+      height: 5vw;
+      top: -8vw;
+      right: 0;
+    }
+
+    &__title,
+    &__button {
+      font-size: 3.5vw;
+      line-height: 4vw;
+    }
+
+    &__buttons {
+      margin: 0 0 3vw;
+      gap: 3vw;
+    }
+
+    &__title {
+      margin: 5vw 0;
+      max-width: 80%;
+    }
+
+    &__button {
+      min-height: 12vw;
+      border-radius: 4vw;
+    }
+  }
+}

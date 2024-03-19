@@ -1,0 +1,70 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+
+.page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eaeaea;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eaeaea;
+
+  @media (max-width: 319px) {
+    & {
+      width: 94vw;
+      padding: 0 3vw;
+    }
+  }
+}
+
+.main {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 28px;
+  margin-bottom: 20px;
+
+  @media (max-width: 319px) {
+    & {
+      gap: 13vw;
+      margin-top: 12vw;
+      margin-bottom: 9vw;
+    }
+  }
+}
+
+.clickable {
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: #aaa;
+    transition: color 0s;
+  }
+}
+
+.single-line {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+}

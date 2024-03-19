@@ -1,0 +1,17 @@
+{
+  "headphones": "Headphones",
+  "wirelessHeadphones": "Wireless headphones",
+  "favourites": "Favourites",
+  "cart": "Cart",
+  "contacts": "Contacts",
+  "termsOfService": "Terms of Service",
+  "buy": "Buy",
+  "total": "TOTAL",
+  "proceedToCheckout": "Proceed to checkout",
+  "notFound": "Page not found",
+  "goBack": "Go back",
+  "emptyCart": "Your cart is currently empty.",
+  "itemAdded": "Item successfully added to cart.",
+  "continueShopping": "Continue shopping",
+  "goToCart": "Go to cart"
+}

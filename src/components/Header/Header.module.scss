@@ -1,0 +1,102 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 60px;
+
+  &__title,
+  &__counter {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__title {
+    margin: auto 0;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    margin: auto 10px;
+    padding: 0;
+  }
+
+  &__button {
+    position: relative;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__counter {
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #ffa542;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    bottom: 16px;
+    left: 16px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: 320px) and (max-width: 1160px) {
+    &__title {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__menu {
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 319px) {
+    & {
+      min-height: 20vw;
+    }
+    &__title {
+      font-size: 6vw;
+      line-height: 6.5vw;
+    }
+
+    &__menu {
+      gap: 10vw;
+      margin: auto 5vw;
+    }
+
+    &__icon {
+      width: 8vw;
+      height: 8vw;
+    }
+
+    &__counter {
+      width: 6vw;
+      height: 6vw;
+      bottom: 6vw;
+      left: 6vw;
+      font-size: 6vw;
+      line-height: 6.5vw;
+      overflow: hidden;
+    }
+  }
+}
