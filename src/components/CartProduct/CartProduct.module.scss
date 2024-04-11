@@ -66,6 +66,8 @@
     align-self: flex-end;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    max-width: 145px;
     gap: 16px;
     min-height: 30px;
   }
@@ -92,6 +94,8 @@
     font-weight: 600;
     font-size: 17px;
     line-height: 21px;
+    min-width: 43px;
+    text-align: center;
   }
 
   &__total-price {
@@ -105,7 +109,7 @@
 
   @media (min-width: 640px) {
     &__countblock {
-      gap: 23px;
+      gap: 16px;
     }
   }
 
@@ -171,6 +175,16 @@
       height: 26px;
     }
 
+    &__countblock {
+      max-width: 130px;
+    }
+
+    &__counter {
+      font-size: 14px;
+      line-height: auto;
+      min-width: 32px;
+    }
+
     &__image {
       max-width: 100px;
       max-height: 95px;
@@ -226,6 +240,9 @@
     &__countblock {
       gap: 3vw;
       min-height: 6vw;
+      min-width: 3vw;
+      justify-content: start;
+      max-width: none;
     }
 
     &__button {
