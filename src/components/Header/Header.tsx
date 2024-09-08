@@ -1,7 +1,7 @@
 import styles from './Header.module.scss';
 import { Link } from 'react-router-dom';
-import cartIcon from '../../images/cartIcon.svg';
-import favouritesIcon from '../../images/favouritesIcon.svg';
+import cartIcon from '../../assets/images/cartIcon.svg';
+import favouritesIcon from '../../assets/images/favouritesIcon.svg';
 import { selectCartItems } from '../../store/cartSlice';
 import { useSelector } from 'react-redux';
 

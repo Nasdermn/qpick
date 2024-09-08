@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .header {
   width: 100%;
   display: flex;
@@ -8,16 +10,9 @@
   min-height: 60px;
   overflow-x: hidden;
 
-  &__title,
-  &__counter {
-    font-family: 'Montserrat', sans-serif;
-  }
-
   &__title {
     margin: auto 0;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
+    @include textStyle(25px, 700, 30px, 6vw, 6.5vw);
   }
 
   &__menu {
@@ -43,21 +38,17 @@
     position: absolute;
     display: block;
     text-align: center;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
     color: #fff;
     background-color: #ffa542;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
     bottom: 16px;
     left: 16px;
+    @include textStyle(15px, 500, 18px, 5vw, 6.3vw);
+    @include size(18px, 18px, 6vw, 6vw);
   }
 
   &__icon {
-    width: 24px;
-    height: 24px;
+    @include size(24px, 24px, 8vw, 8vw);
   }
 
   @media (min-width: 320px) and (max-width: 1160px) {
@@ -75,28 +66,15 @@
     & {
       min-height: 20vw;
     }
-    &__title {
-      font-size: 6vw;
-      line-height: 6.5vw;
-    }
 
     &__menu {
       gap: 10vw;
       margin: auto 5vw;
     }
 
-    &__icon {
-      width: 8vw;
-      height: 8vw;
-    }
-
     &__counter {
-      width: 6vw;
-      height: 6vw;
       bottom: 6vw;
       left: 6vw;
-      font-size: 6vw;
-      line-height: 6.5vw;
       overflow: hidden;
     }
   }

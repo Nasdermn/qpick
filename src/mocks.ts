@@ -1,15 +1,15 @@
-import byzS852I from './images/products/byzS852I.png';
-import EarPods from './images/products/EarPods.png';
-import EarPodsPro from './images/products/EarPodsPro.png';
-import sonyWHCH500 from './images/products/sonyWHCH500.png';
-import BeyerdynamicLagoon from './images/products/beyerdynamicLagoon.png';
-import moondropSparks from './images/products/moondropSparks.png';
-import AirPods from './images/products/AirPods.png';
-import GerlaxGH04 from './images/products/GerlaxGH04.png';
-import borofoneBO4 from './images/products/borofoneBO4.png';
-import a4techBloodyG300 from './images/products/a4techBloodyG300.png';
-import eaePods from './images/products/eaePods.png';
-import pioneerSEMJ503 from './images/products/pioneerSEMJ503.png';
+import byzS852I from './assets/images/products/byzS852I.png';
+import EarPods from './assets/images/products/EarPods.png';
+import EarPodsPro from './assets/images/products/EarPodsPro.png';
+import sonyWHCH500 from './assets/images/products/sonyWHCH500.png';
+import BeyerdynamicLagoon from './assets/images/products/beyerdynamicLagoon.png';
+import moondropSparks from './assets/images/products/moondropSparks.png';
+import AirPods from './assets/images/products/AirPods.png';
+import GerlaxGH04 from './assets/images/products/GerlaxGH04.png';
+import borofoneBO4 from './assets/images/products/borofoneBO4.png';
+import a4techBloodyG300 from './assets/images/products/a4techBloodyG300.png';
+import eaePods from './assets/images/products/eaePods.png';
+import pioneerSEMJ503 from './assets/images/products/pioneerSEMJ503.png';
 
 export const headphones = [
   {

@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .footer {
   width: 100%;
   display: flex;
@@ -9,17 +11,9 @@
   box-sizing: border-box;
   margin-top: auto;
 
-  &__logo,
-  &__link,
-  &__language {
-    font-family: 'Montserrat', sans-serif;
-  }
-
   &__logo {
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
     margin: 0;
+    @include textStyle(25px, 700, 30px, 6vw, 6.5vw);
   }
 
   &__navigation,
@@ -47,13 +41,16 @@
     gap: 10px;
   }
 
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
   &__link {
     text-decoration: none;
     color: #000;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 21px;
     white-space: nowrap;
+    @include textStyle(17px, 400, 21px, 4vw, 5vw);
   }
 
   &__languages {
@@ -61,9 +58,8 @@
   }
 
   &__globe {
-    width: 17px;
-    height: 17px;
     object-fit: contain;
+    @include size(17px, 17px, 6vw, 6vw);
   }
 
   &__language {
@@ -71,10 +67,8 @@
     border: 0;
     padding: 0;
     background-color: transparent;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
     color: #101010;
+    @include textStyle(15px, 700, 18px, 4.5vw, 5vw);
 
     &_current {
       color: #ffa542;
@@ -206,35 +200,22 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2vw;
+      padding: 2vw 4vw;
       gap: 2vw;
       max-height: 90vw;
       border-top-right-radius: 9vw;
       border-top-left-radius: 9vw;
     }
 
-    &__logo {
-      font-size: 6vw;
-      line-height: 6.5vw;
-    }
-
     &__navigation {
       width: 100%;
       justify-content: space-between;
       align-items: center;
+      margin: 0 auto;
     }
 
     &__list {
       gap: 1vw;
-    }
-
-    &__item {
-      max-height: 15vw;
-    }
-
-    &__link {
-      font-size: 4vw;
-      line-height: 5vw;
     }
 
     &__settings {
@@ -246,11 +227,6 @@
       gap: 3vw;
     }
 
-    &__language {
-      font-size: 5vw;
-      line-height: 5.5vw;
-    }
-
     &__socials {
       height: 7vw;
       gap: 4vw;
@@ -258,11 +234,6 @@
 
     &__icon {
       width: 7vw;
-    }
-
-    &__globe {
-      width: 7vw;
-      height: 7vw;
     }
   }
 }

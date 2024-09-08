@@ -1,0 +1,33 @@
+@mixin textStyle($fs, $fw, $lh, $sfs: $fs, $slh: $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+
+  @media (max-width: 319px) {
+    font-size: $sfs;
+    line-height: $slh;
+  }
+}
+
+@mixin centeredFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centeredColumnFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin size($w, $h: $w, $sw: $w, $sh: $h) {
+  width: $w;
+  height: $h;
+
+  @media (max-width: 319px) {
+    width: $sw;
+    height: $sh;
+  }
+}

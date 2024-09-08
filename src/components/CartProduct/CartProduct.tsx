@@ -1,5 +1,5 @@
 import styles from './CartProduct.module.scss';
-import trashIcon from '../../images/trashIcon.svg';
+import trashIcon from '../../assets/images/trashIcon.svg';
 import { ICartProduct } from '../../interfaces';
 import { removeItem, increaseQuantity, decreaseQuantity } from '../../store/cartSlice';
 import { useDispatch } from 'react-redux';

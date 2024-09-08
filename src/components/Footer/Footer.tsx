@@ -1,9 +1,9 @@
 import styles from './Footer.module.scss';
 import { Link } from 'react-router-dom';
-import globeIcon from '../../images/globeIcon.svg';
-import vkIcon from '../../images/socials/vk.svg';
-import telegramIcon from '../../images/socials/telegram.svg';
-import whatsAppIcon from '../../images/socials/whatsApp.svg';
+import globeIcon from '../../assets/images/globeIcon.svg';
+import vkIcon from '../../assets/images/socials/vk.svg';
+import telegramIcon from '../../assets/images/socials/telegram.svg';
+import whatsAppIcon from '../../assets/images/socials/whatsApp.svg';
 import { useTranslation } from 'react-i18next';
 
 function Footer() {

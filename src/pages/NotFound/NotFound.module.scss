@@ -1,32 +1,22 @@
+@import '../../styles/mixins';
+
 .error {
   min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
   padding: 20px 0;
-
-  &__title,
-  &__subtitle,
-  &__link {
-    font-family: 'Montserrat', sans-serif;
-  }
+  @include centeredColumnFlex();
+  justify-content: center;
 
   &__title {
     margin: 0;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
     white-space: nowrap;
+    @include textStyle(32px, 700, 40px, 8vw, 10vw);
   }
 
   &__subtitle {
     margin: 0 0 20px;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 26px;
     white-space: nowrap;
+    @include textStyle(17px, 500, 26px, 4vw, 6vw);
   }
 
   &__link {
@@ -34,11 +24,9 @@
     outline: 0;
     border: 0;
     padding: 0;
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 30px;
     color: #aaa;
     white-space: nowrap;
+    @include textStyle(21px, 600, 30px, 6vw, 8vw);
   }
 }
 
@@ -46,20 +34,8 @@
   .error {
     gap: 5vw;
 
-    &__title {
-      font-size: 8vw;
-      line-height: 10vw;
-    }
-
     &__subtitle {
-      font-size: 4vw;
-      line-height: 6vw;
       margin: 0 0 5vw;
-    }
-
-    &__link {
-      font-size: 6vw;
-      line-height: 8vw;
     }
   }
 }
